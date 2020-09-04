@@ -5,6 +5,14 @@ This tutorial is does not include an in depth discussion on all things full-stac
 
 In my opinion, the best way to approach this is to follow along and build each component of the app as I do.  If you run into issues, you can consult the final product code in the repo [here](https://github.com/cchyung/full-stack-workshop-post)
 
+## Installing Node
+If you don't already have Node installed, you can download it from [here](https://nodejs.org/en/download/).
+
+Alternatively, if you're on a mac and have `brew` installed:  
+`$ brew install node`
+
+For information on how to install brew you can checkout [this](https://brew.sh/).
+
 ## Getting Started
 Start by making a folder for where your project is going to live:  
 `$ mkdir full-stack-workshop`
