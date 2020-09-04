@@ -1,4 +1,11 @@
-# Getting Started
+# Introduction
+This post is meant to help guide you through the process of building a full-stack web application; complete with a backend API, database, and a frontend which users can interact with.
+
+This tutorial is does not include an in depth discussion on all things full-stack, but rather attempts to provide enough knowledge to allow you to start building your own applications.
+
+In my opinion, the best way to approach this is to follow along and build each component of the app as I do.  If you run into issues, you can consult the final product code in the repo [here](https://github.com/cchyung/full-stack-workshop-post)
+
+## Getting Started
 Start by making a folder for where your project is going to live:  
 `$ mkdir full-stack-workshop`
 
@@ -924,7 +931,15 @@ Client.createPost(postContents, currentUsername)
 
 Lets also pass this username down to the `Post` component as a prop by adding `currentUsername={ currentUsername }`:
 ```javascript
-    <Post key={ post.id } id={ post.id } contents={ post.contents } username={ post.user.username } comments={ post.comments } currentUsername={ currentUsername } getPosts={ getPosts }/>
+<Post 
+    key={ post.id } 
+    id={ post.id } 
+    contents={ post.contents } 
+    username={ post.user.username } 
+    comments={ post.comments } 
+    currentUsername={ currentUsername } 
+    getPosts={ getPosts }
+/>
 ```
 
 Next, we can update the `Post` component to accept this prop, and update the call to `addComment()` to user `currentUsername`
@@ -990,6 +1005,14 @@ return (
 ```
 
 In feed, we also added a line at the top to welcome the user if they've logged in!
+
+# Deploying
+This tutorial will not go over how to deploy this application, but I will point you to some great resources that are my personal favorites.
+
+First is [Netlify](https://www.netlify.com/) which is a PaaS product that allows for easy deploys of static frontend frameworks like react.  All you have to do is connect your GitHub repo, and push to deploy your application to the internet!  Not only is Netlify easy to use, it is also free! 
+
+For deploying the backend and database, you can use [Heroku](https://www.heroku.com/).  Heroku also allows for easy-to-setup, 1-click deploys and has a free tier which sleeps when not in use. This is a great start for deploying your backend when you won't be getting much traffic.
+
 
 # Conclusion
 At this point, your application should be fully connected with the backend API.  You should be able to SignUp as a new user and create posts and add comments.  
