@@ -347,10 +347,10 @@ Now that we have our API fully built, we can use a tool like postman to actually
 
 ### Getting All Posts
 By hitting `api/posts` with a `GET` request, we can get the feed of all posts:
-[](blog-assets/get%20posts%20postman.png)
+![](blog-assets/get%20posts%20postman.png)
 
 By posting to `api/posts` with `username` and `contents` fields, we can create a new post:
-[](blog-assets/create%20post%20postman.png)
+![](blog-assets/create%20post%20postman.png)
 
 
 # Frontend
@@ -445,7 +445,7 @@ Here, we setup routing inside our app, import necessary libraries as well as the
 Note `const AppTitle`.  This is using styled-components to style a title that goes at the top of the page.  We can define the type of html element we want the object to be, and then reference it as if were just a regular react component.
 
 This is what you should see as of now:
-[](blog-assets/frontend%20screenshot%20initial.png)
+![initial frontend](blog-assets/frontend%20screenshot%20initial.png)
 
 ## Building out the Feed
 Now we can start building out the presentational components of the feed.  
@@ -654,7 +654,7 @@ const Feed = () => {
 Note, we use `useState(dummyPosts)` to initialize the posts to the dummy data we have hardcoded above.  Later, we will change this to be populated by an API call.
 
 Here's what we should have so far:
-[](blog-assets/frontend%20screenshot%20initial.png)
+![image](blog-assets/frontend%20screenshot%20initial.png)
 
 ## Connecting the API
 Let's create the client for connecting to the API.
