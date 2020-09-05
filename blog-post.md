@@ -662,7 +662,7 @@ const Feed = () => {
 Note, we use `useState(dummyPosts)` to initialize the posts to the dummy data we have hardcoded above.  Later, we will change this to be populated by an API call.
 
 Here's what we should have so far:
-![image](blog-assets/frontend%20screenshot%20initial.png)
+![image](blog-assets/frontend%20screenshot%20dummy%20data.png)
 
 ## Connecting the API
 Let's create the client for connecting to the API.
